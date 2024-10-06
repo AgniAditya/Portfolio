@@ -1,0 +1,46 @@
+.contain-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.name{
+    position: fixed;
+    left: 10%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header{
+    background-color:transparent;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    left: 50%;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.header-buttons{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 17px;
+    border: none;
+    background-color: transparent;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header-buttons:hover{
+    background-color: #2F3C7E;
+    color: white;
+}

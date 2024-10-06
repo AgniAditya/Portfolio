@@ -1,0 +1,38 @@
+.home{
+    margin: 0px;
+}
+
+.home-myself{
+    position: absolute;
+    top: 40%;
+    left: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.aditya-span{
+    color: #2F3C7E;
+}
+
+.main-image-me{
+    width : 700px;
+    height: 700px;
+    transition: width 0.5s, height 0.5s;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    z-index: 0;
+    filter: drop-shadow(rgba(0, 0, 0, 0.6) 1rem 1rem 10px);
+}
+
+.main-image-me:hover{
+    width : 720px;
+    height: 720px;
+}
+
+.frontend-dev{
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.5);
+}
