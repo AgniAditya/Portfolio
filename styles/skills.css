@@ -1,0 +1,18 @@
+.skills-sec{
+    position: absolute;
+    top: 1580px;
+    right: 0px;
+    left: 0px;
+    height: 790px;
+    background-color: aqua;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 650px 1fr;
+}
+
+.skills-text{
+    font-size: 90px;
+    position: relative;
+    left: 30%;
+    color: #2f3c7e;
+}

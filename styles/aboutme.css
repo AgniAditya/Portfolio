@@ -1,0 +1,33 @@
+.about-me-sec{
+    position: absolute;
+    top: 800px;
+    left: 0px;
+    right: 0px;
+    height: 780px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 0;
+}
+
+.about-me-text{
+    flex: 45%;
+    font-size: 90px;
+    position: relative;
+    left: 10%;
+    color: #2f3c7e;
+}
+
+.about-me{
+    flex: 55%;
+    position: relative;
+    left: 0px;
+    margin-right: 25px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
