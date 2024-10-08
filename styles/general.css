@@ -3,3 +3,7 @@ body{
     margin: 0px;
     height: 3000px;
 }
+
+html{
+    scroll-behavior: smooth;
+}
