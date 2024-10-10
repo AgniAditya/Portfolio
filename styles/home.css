@@ -44,3 +44,16 @@
     font-size: 25px;
     color: rgba(0, 0, 0, 0.5);
 }
+
+.social-media{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 200px;
+    cursor: pointer;
+}
+
+.insta-img,.linkedln-img,.github-img,.leetcode-img{
+    width: 30px;
+    filter: opacity(50%);
+}
