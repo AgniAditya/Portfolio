@@ -1,0 +1,134 @@
+/* General styling for the chatbox */
+.chatbox {
+    width: 500px;
+    height: 500px;
+    border: none;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  /* Header styling */
+  .chatbox-header {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    font-size: 20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    position: relative; /* Important for positioning the close button */
+  }
+  
+  /* Close button style */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .close-btn:hover {
+    color: #e74c3c; /* Change color when hovering over the close button */
+  }
+  
+  /* Body where chat messages appear */
+  .chatbox-body {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: scroll;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e4e8;
+    font-size: 14px;
+  }
+  
+  /* Footer styling where user types message */
+  .chatbox-footer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  
+  .chatbox-footer input {
+    width: 80%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f1f1f1;
+    transition: border 0.3s ease;
+  }
+  
+  .chatbox-footer input:focus {
+    border-color: #6c5ce7;
+    outline: none;
+  }
+  
+  .chatbox-footer button {
+    width: 15%;
+    padding: 12px;
+    border: none;
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 14px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chatbox-footer button:hover {
+    background-color: #5a4ac7;
+  }
+  
+  /* Styling for each message */
+  .message {
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 75%;
+    font-size: 14px;
+  }
+  
+  /* User message styling */
+  .message.user {
+    background-color: #74b9ff;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  /* Bot message styling */
+  .message.bot {
+    background-color: #dfe6e9;
+    color: #2d3436;
+    align-self: flex-start;
+  }
+  
+  /* Optional: Smooth transitions for messages */
+  .message {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  

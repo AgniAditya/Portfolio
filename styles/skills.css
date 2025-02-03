@@ -15,12 +15,23 @@
     font-weight: bold;
 }
 
-.language-sec{
+.languages{
     flex: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-sec1,.language-sec2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .i-know-text,.learning-text{
-    margin-left: 50%;
     font-size: 40px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -33,16 +44,23 @@
     row-gap: 30px;
     margin-bottom: 50px;
     margin-top: 50px;
+    width: 100%;
 }
 
 .language-learning-icon{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 50px;
+    width: 100%;
+}
+
+.python-box,.java-box,.html-box,.css-box
+,.js-box{
+    display: flex;
+    justify-content: center;
 }
 
 .python-icon,.java-icon,
 .html-icon,.css-icon,.js-icon{
     width: 80px;
-    margin-left: 50%;
 }

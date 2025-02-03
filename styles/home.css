@@ -1,15 +1,19 @@
 .home{
-    margin: 0px;
     width: 100%;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-home{
+    flex: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .home-myself{
-    flex: 50%;
-    position: absolute;
-    top: 40%;
-    left: 150px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 50px;
@@ -17,6 +21,10 @@
 
 .image-wrapper{
     flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .aditya-span{
@@ -24,19 +32,40 @@
 }
 
 .main-image-me{
-    width : 700px;
-    height: 700px;
+    width : 550px;
+    height: 550px;
     transition: width 0.5s, height 0.5s;
-    position: absolute;
-    bottom: 0px;
-    right: 50px;
+    border-radius: 100%;
     z-index: 0;
     filter: drop-shadow(rgba(0, 0, 0, 0.3) 1rem 1rem 20px);
 }
 
 .main-image-me:hover{
-    width : 720px;
-    height: 720px;
+    width : 570px;
+    height: 570px;
+}
+
+@media screen and (max-width:1060px){
+    .main-image-me{
+        width: 500px;
+        height: 500px;
+    }
+    .main-image-me:hover{
+        width : 520px;
+        height: 520px;
+    }
+    .home-myself{
+        font-size: 40px;
+    }
+    .frontend-dev{
+        font-size: 20px;
+    }
+    .social-media{
+        width: 150px;
+    }
+    .insta-img,.linkedln-img,.github-img,.leetcode-img,.kaggle-logo{
+        width: 20px;
+    }
 }
 
 .frontend-dev{
@@ -48,12 +77,13 @@
 .social-media{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 200px;
     cursor: pointer;
 }
 
-.insta-img,.linkedln-img,.github-img,.leetcode-img{
+.insta-img,.linkedln-img,.github-img,.leetcode-img,.kaggle-logo{
     width: 30px;
     filter: opacity(50%);
+    filter: grayscale(100%);
 }

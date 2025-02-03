@@ -6,3 +6,35 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+.myCheetahbotbtn{
+    width: 120px;
+    position: fixed;
+    bottom: 70px;
+    right: 100px;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+    background-color: transparent;
+    padding: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.myCheetahbotbtn:hover{
+}
+
+.cheetahimage{
+    width: 100px;
+    border-radius: 100px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
